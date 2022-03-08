@@ -11,7 +11,10 @@
     <br />
     <a href="https://github.com/Lorenalgm/contador">Desafio</a>
     ·
+    <a href="https://thalesms2.github.io/contador-DevChallenge/">Site Pronto</a>
+    ·
     <a href="https://www.linkedin.com/in/lorenagmontes/">Contato</a>
+    
   </p>
 </p>
 
