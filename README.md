@@ -25,6 +25,7 @@
   * [Cores](#cores)
   * [Modelo](#modelo)  
   * [Tipo de fonte](#tipo-de-fonte)
+* [Passo a passo](#passo-a-passo)
 * [Compartilhe](#compartilhe)
 
 # Devchallenge
@@ -67,6 +68,16 @@ O modelo está disponível na pasta `./design`<br>
 ## Tipo de fonte:
 - Roboto.<br>
 Você pode utilizar do google fonts.
+
+# Passo a passo
+- Estrutura HTML necessária<br>
+- Estilização da página<br>
+- Esqueleto do script em comentários para planejamento<br>
+- Funcionabilidade dos botões para mostrar e esconder a seções respectivas<br>
+- Solução para fornecer valor padrão de data atual na tag input<br>
+- Funcionabilidade do contador utilizando a seguinte lógica:<br>
+Comparando a data atual com a alvo dada pelo input do usuário é feito o calculo para saber quantos segundos há entre as duas datas, então é realizado divisões pela quantidade de segundos que há no dia, o resultando sendo a quantidade de dias que há entre a data alvo e atual, e o resto sendo a quantiade de segundos que será distribuida em horas, minutos e segundos.
+
 
 # Compartilhe!
 Inicie seu projeto utilizando esse template no seu github como um repositório público<br>
