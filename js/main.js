@@ -8,17 +8,19 @@ const getYear = () => { return date.getFullYear() }
 const defaultValueOnInput = () => { input.value = `${getYear()}-${getMonth()}-${getDay()}` }
 defaultValueOnInput()
 
+var myInterval
+
 const start = () => {
     let inputDate = input.value
     let targetDate = new Date(inputDate).getTime();
     let date = new Date();
     let currentDate = new Date(date.valueOf() - date.getTimezoneOffset() * 60000);
-    
+    reboot = false
     if(targetDate < currentDate) {
         alert('Favor informar uma data superior a atual');
         defaultValueOnInput()
     } else {
-        const myInterval = setInterval(() => {
+        myInterval = setInterval(() => {
             targetDate = new Date(inputDate).getTime();
             date = new Date();
             currentDate = new Date(date.valueOf() - date.getTimezoneOffset() * 60000);
@@ -37,14 +39,16 @@ const start = () => {
             days = document.getElementById('days').innerHTML = days;
             hours = document.getElementById('hours').innerHTML = hours;
             minutes = document.getElementById('minutes').innerHTML = minutes;
-            seconds = document.getElementById('seconds').innerHTML = seconds;        
-        })
+            seconds = document.getElementById('seconds').innerHTML = seconds; 
+        })    
         document.querySelector('.contador').style.display = "flex"
         document.querySelector('.home').style.display = "none"
     }
 }
 
 const back = () => { 
+    clearInterval(myInterval)
+    console.log(reboot)
     document.querySelector('.contador').style.display = "none"
     document.querySelector('.home').style.display = "flex"
 }
