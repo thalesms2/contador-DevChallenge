@@ -1,6 +1,7 @@
 <p align="center">
   <a href="http://www.freepik.com">
     <img src="https://i.ibb.co/RzmJtXK/mockuper-5.png" alt="Logo" width="350" height="250">
+    > Desafio completo ✔️
   </a>
 
   <h3 align="center">Contador</h3>
